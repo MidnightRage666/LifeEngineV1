@@ -2,7 +2,7 @@
 using System;
 using OpenTK.Windowing.Desktop;
 
-namespace LifeEngine
+namespace LifeEngineV1
 {
     class Program
     {

@@ -21,14 +21,14 @@ namespace LifeEngineV1.ShaderProgramm
             Assembly a = Assembly.GetExecutingAssembly();
 
             // Vertex Shader auslesen
-            Stream sVertex = a.GetManifestResourceStream("LifeEngine.ShaderProgramm.shaderStandard_vertex.glsl");
+            Stream sVertex = a.GetManifestResourceStream("LifeEngineV1.ShaderProgramm.shaderStandard_vertex.glsl");
             StreamReader sReaderVertex = new StreamReader(sVertex);
             string sVertexCode = sReaderVertex.ReadToEnd();
             sReaderVertex.Dispose();
             sVertex.Close();
 
             // Fragment Shader auslesen
-            Stream sFragment = a.GetManifestResourceStream("LifeEngine.ShaderProgramm.shaderStandard_fragment.glsl");
+            Stream sFragment = a.GetManifestResourceStream("LifeEngineV1.ShaderProgramm.shaderStandard_fragment.glsl");
             StreamReader sReaderFragment = new StreamReader(sFragment);
             string sFragmentCode = sReaderFragment.ReadToEnd();
             sReaderFragment.Dispose();
